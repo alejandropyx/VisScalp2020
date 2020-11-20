@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualizing Connectivity scalp 20-20</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style> body { margin: 0; } </style>
+
+  <script src="https://unpkg.com/3d-force-graph/dist/3d-force-graph.min.js"></script>
+  <!--<script src="../../dist/3d-force-graph.js"></script>-->
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+  <script src="three.js-master/build/three.js"></script>
+  <script src="three.js-master/examples/js/loaders/GLTFLoader.js"></script>
+
+  <script src="three.js-master/examples/js/loaders/RGBELoader.js"></script>
+
+  <script src="OrbitControls.js"></script>
+
+</head>
+<body>
+
+<h1>Visualizing Connectivity scalp 20-20</h1>
+
+<div id="InputSection">
+  <label class="custom-file-upload">
+    <input type="file"  id="fileToLoad">
+    Upload Matrix
+    </label>
+  
+  <label id="Labels" for="male">Threshold</label>
+  <input type="text" id="myInput" value="0">
+  <button onclick="loadFileAsText()">Load Selected File</button>
+  <div id="content-target"> </div>
+  </div>
+
+  <div id="ExampleFile">    
+    <button onclick="download()">Download Example</button>    
+  </div>
+
+<script>
+
+
+
+
+</script>
+
+
+
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="main_min.js"></script>
+
+<div id="3d-graph"></div>
+
+
+</body>
+</html>
